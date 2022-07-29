@@ -1,0 +1,88 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #eaeaea;
+}
+.first-circle{
+    position: absolute;
+    bottom: 300px;
+    left: -150px;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    /* border: thin solid; */
+    /* background: linear-gradient(154deg,#A5CFDD,#BFA9CF 50%,#d783b5 50%) */
+    background: radial-gradient(farthest-side at 30% 40%, #A5CFDD,#d783b5, #BFA9CF);
+}
+.second-circle{
+    position: absolute;
+    top: 300px;
+    right: -200px;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    /* border: thin solid; */
+    background: radial-gradient(farthest-side at 40% 60%, #BFA9CF,#d783b5, #A5CFDD)
+}
+.adminBox{
+    width: 1080px !important;
+    height: 580px !important;
+    /* position: absolute; */
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    position: relative;
+    overflow-x: hidden;
+}
+.third-circle{
+    position: absolute;
+    bottom: 260px;
+    left: -260px;
+    width: 60%;
+    height: 100%;
+    border-radius: 50%;
+    /* border: thin solid; */
+    background: #ce80af;
+}
+.fourth-circle{
+    position: absolute;
+    top: 254px;
+    right: -306px;
+    width: 60%;
+    height: 100%;
+    border-radius: 50%;
+    /* border: thin solid; */
+    background: #7db9cd;
+}
+nav{
+    background-color:  rgba(202, 231, 241,.4);
+    position: absolute;
+    z-index: 1;
+}
+.cards{
+    position: absolute;
+    width: 100% !important;
+    margin: auto !important;
+
+}
+.signbtn{
+    background: #ce80af !important;
+    padding: 10px 20px !important;
+    border-color: #d783b5 !important;
+}
+.logbtn{
+    background: #eaeaea !important;
+    padding: 10px 20px !important;
+    border-color: #d783b5 !important;
+}
+.logbtn:hover{
+    background: #ce80af !important;
+}
