@@ -107,14 +107,15 @@
     margin: 35px auto;
     position: relative;
     border-radius: 20px ;
-    background-color: rgba(57, 86, 96,.3);
-    box-shadow: 0 0 50px 9px rgba(57, 86, 96,.5);
+    background-color: rgba(255, 255, 255,.4);
+    box-shadow: 0 0 5px 9px rgba(255, 255, 255,.2);
 }
 button{
     border: none !important;
 }
 .toogle-btn{
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
+    background: none !important;
     cursor: pointer;
     background: transparent;
     border: 0;

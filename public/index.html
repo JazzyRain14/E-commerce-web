@@ -8,16 +8,13 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
 
 <body>
-    <div class="first-circle"></div>
-    <div class="second-circle"></div>
-    <div class="container border adminBox">
-        <div class="third-circle"></div>
-        <div class="fourth-circle"></div>
+    <div class="container-fluid">
         <div>
-            <nav class="navbar position-sticky top-0 navbar-expand-lg">
+            <nav class="navbar position-sticky top-0 navbar-expand">
                 <div class="container-fluid">
                     <a class="navbar-brand me-2 ms-2" href="#">Navbar</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -30,325 +27,182 @@
                             <li class="nav-item">
                                 <a class="nav-link active ms-2 me-2 " aria-current="page" href="#">Home</a>
                             </li>
-                            <!-- <li class="nav-item ms-2 me-2">
-                                <a class="nav-link" href="#">Link</a>
-                            </li> -->
-                            <li class="nav-item dropdown ms-2 me-2">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Menu
-                                </a>
-                                <ul class="dropdown-menu" style="position: absolute;z-index:1;">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <!-- <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                      </li> -->
                         </ul>
-                        <!-- <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
                     </div>
                     <div>
-                        <button id="sign" class="btn signbtn m-2">Sign Up</button>
+                        <button id="sign" class="btn signbtn m-2 text-hover-white">Sign Up</button>
                         <button id="log" class="btn logbtn m-2">Log In</button>
                     </div>
-                </div>
             </nav>
-            <div class="border border-danger row g-3 cards">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div id="card-img">
-                            <img src="images/card-1.png" class="card-img-top" alt=""
-                                style="height: 14rem;object-fit: cover;">
-                        </div>
-                        <div>
-                            <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
-                                rgb(56, 74, 98);">
-                                Two-sided Business Cards
-                            </h5>
-                            <p class=" fw-semibold card-subtitle p-2"
-                                style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
-                                STARTING AT
-                            </p>
-                            <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
-                                rgb(56, 74, 98);">
-                                ₦7,700 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
-                            </p>
-                        </div>
-                        <a id="purchbtn" class="btn text-start text-light fw-semibold p-2 m-2"
-                            style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
-                            href="#"><span>Browse
-                                Two-sided Bu...
-                                <img src="images/svgexport-2.png" alt="">
-                            </span></a>
+        </div>
+        <div class="container-fluid ">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carou" data-bs-ride="carousel">
+                <div class="carousel-inner carou">
+                    <div class="carousel-item active ">
+                        <img src="/public/images/ecommerce/21.jpg" class="d-block" alt="..." id="imgg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/images2/41iqXVKQj6L-removebg-preview.png" class="d-block" alt="..." id="imgg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/images/ecommerce/53.jpg" class="d-block" alt="..." id="imgg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/images2/413AXspZZxL-removebg-preview.png" class="d-block" alt="..." id="imgg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/images2/51tQ-fH0zlL-removebg-preview.png" class="d-block" alt="..." id="imgg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/images2/51L7tmfsV5L-removebg-preview.png" class="d-block" alt="..." id="imgg">
                     </div>
                 </div>
             </div>
-            <div class="border border-danger row g-3 cards">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div id="card-img">
-                            <img src="images/card-1.png" class="card-img-top" alt=""
-                                style="height: 14rem;object-fit: cover;">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-5 col-sm-12 boxMode mt-sm-2">
+                    <div class="card-glass m-auto cardglass">
+                        <div id="card-img" class="card-header text-center">
+                            <div class="card-title">
+                                <p>header</p>
+                            </div>
                         </div>
-                        <div>
-                            <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
-                                rgb(56, 74, 98);">
-                                Two-sided Business Cards
-                            </h5>
-                            <p class=" fw-semibold card-subtitle p-2"
-                                style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
-                                STARTING AT
-                            </p>
-                            <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
-                                rgb(56, 74, 98);">
-                                ₦7,700 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
-                            </p>
+                        <div class="card-body cardbody">
+                            <img src="/public/images/ecommerce/113.jpg" alt="" style="width: 100%;">
                         </div>
-                        <a id="purchbtn" class="btn text-start text-light fw-semibold p-2 m-2"
-                            style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
-                            href="#"><span>Browse
-                                Two-sided Bu...
-                                <img src="images/svgexport-2.png" alt="">
-                            </span></a>
+                        <div class="card-footer footer">
+                            <div>price</div>
+                            <div>Amount</div>
+                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                                she
+                                yeye mi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 boxMode  mt-sm-2">
+                    <div class="card-glass m-auto">
+                        <div id="card-img" class="card-header text-center">
+                            <div class="card-title">
+                                <p>header</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="/public/images2/51L7tmfsV5L-removebg-preview.png" alt="" style="width: 100%;">
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                                she
+                                yeye mi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 boxMode  mt-sm-2">
+                    <div class="card-glass m-auto">
+                        <div id="card-img" class="card-header text-center">
+                            <div class="card-title">
+                                <p>header</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="/public/images/ecommerce/107.jfif" alt="" style="width: 100%;">
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                                she
+                                yeye mi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 boxMode  mt-sm-2">
+                    <div class="card-glass m-auto">
+                        <div id="card-img" class="card-header text-center">
+                            <div class="card-title">
+                                <p>header</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="/public/images/ecommerce/64.jpg" alt="" style="width: 100%;">
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                                she
+                                yeye mi</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="border border-danger row g-3 cards">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div id="card-img">
-                            <img src="images/card-1.png" class="card-img-top" alt=""
-                                style="height: 14rem;object-fit: cover;">
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-3 col-md-5 col-sm-12 boxMode  mt-sm-2">
+                    <div class="card-glass m-auto">
+                        <div id="card-img" class="card-header text-center">
+                            <div class="card-title">
+                                <p>header</p>
+                            </div>
                         </div>
-                        <div>
-                            <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
-                                rgb(56, 74, 98);">
-                                Two-sided Business Cards
-                            </h5>
-                            <p class=" fw-semibold card-subtitle p-2"
-                                style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
-                                STARTING AT
-                            </p>
-                            <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
-                                rgb(56, 74, 98);">
-                                ₦7,700 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
-                            </p>
+                        <div class="card-body">
+                            <img src="/public/images/ecommerce/113.jpg" alt="" style="width: 100%;">
                         </div>
-                        <a id="purchbtn" class="btn text-start text-light fw-semibold p-2 m-2"
-                            style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
-                            href="#"><span>Browse
-                                Two-sided Bu...
-                                <img src="images/svgexport-2.png" alt="">
-                            </span></a>
+                        <div class="card-footer">
+                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                                she
+                                yeye mi</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div id="card-img">
-                            <img src="images/card-1.png" class="card-img-top" alt=""
-                                style="height: 14rem;object-fit: cover;">
+                <div class="col-lg-3 col-md-5 col-sm-12 boxMode  mt-sm-2">
+                    <div class="card-glass m-auto">
+                        <div id="card-img" class="card-header text-center">
+                            <div class="card-title">
+                                <p>header</p>
+                            </div>
                         </div>
-                        <div>
-                            <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
-                                rgb(56, 74, 98);">
-                                Two-sided Business Cards
-                            </h5>
-                            <p class=" fw-semibold card-subtitle p-2"
-                                style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
-                                STARTING AT
-                            </p>
-                            <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
-                                rgb(56, 74, 98);">
-                                ₦7,700 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
-                            </p>
+                        <div class="card-body">
+                            <img src="/public/images2/51L7tmfsV5L-removebg-preview.png" alt="" style="width: 100%;">
                         </div>
-                        <a id="purchbtn" class="btn text-start text-light fw-semibold p-2 m-2"
-                            style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
-                            href="#"><span>Browse
-                                Two-sided Bu...
-                                <img src="images/svgexport-2.png" alt="">
-                            </span></a>
+                        <div class="card-footer">
+                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                                she
+                                yeye mi</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div id="card-img">
-                            <img src="images/card-1.png" class="card-img-top" alt=""
-                                style="height: 14rem;object-fit: cover;">
+                <div class="col-lg-3 col-md-5 col-sm-12 boxMode  mt-sm-2">
+                    <div class="card-glass m-auto">
+                        <div id="card-img" class="card-header text-center">
+                            <div class="card-title">
+                                <p>header</p>
+                            </div>
                         </div>
-                        <div>
-                            <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
-                                rgb(56, 74, 98);">
-                                Two-sided Business Cards
-                            </h5>
-                            <p class=" fw-semibold card-subtitle p-2"
-                                style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
-                                STARTING AT
-                            </p>
-                            <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
-                                rgb(56, 74, 98);">
-                                ₦7,700 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
-                            </p>
+                        <div class="card-body">
+                            <img src="/public/images/ecommerce/107.jfif" alt="" style="width: 100%;">
                         </div>
-                        <a id="purchbtn" class="btn text-start text-light fw-semibold p-2 m-2"
-                            style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
-                            href="#"><span>Browse
-                                Two-sided Bu...
-                                <img src="images/svgexport-2.png" alt="">
-                            </span></a>
+                        <div class="card-footer">
+                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                                she
+                                yeye mi</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div id="card-img">
-                            <img src="images/card-1.png" class="card-img-top" alt=""
-                                style="height: 14rem;object-fit: cover;">
+                <div class="col-lg-3 col-md-5 col-sm-12 boxMode  mt-sm-2">
+                    <div class="card-glass m-auto">
+                        <div id="card-img" class="card-header text-center">
+                            <div class="card-title">
+                                <p>header</p>
+                            </div>
                         </div>
-                        <div>
-                            <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
-                                rgb(56, 74, 98);">
-                                Two-sided Business Cards
-                            </h5>
-                            <p class=" fw-semibold card-subtitle p-2"
-                                style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
-                                STARTING AT
-                            </p>
-                            <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
-                                rgb(56, 74, 98);">
-                                ₦7,700 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
-                            </p>
+                        <div class="card-body">
+                            <img src="/public/images/ecommerce/64.jpg" alt="" style="width: 100%;">
                         </div>
-                        <a id="purchbtn" class="btn text-start text-light fw-semibold p-2 m-2"
-                            style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
-                            href="#"><span>Browse
-                                Two-sided Bu...
-                                <img src="images/svgexport-2.png" alt="">
-                            </span></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div id="card-img">
-                            <img src="images/card-1.png" class="card-img-top" alt=""
-                                style="height: 14rem;object-fit: cover;">
+                        <div class="card-footer">
+                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                                she
+                                yeye mi</button>
                         </div>
-                        <div>
-                            <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
-                                rgb(56, 74, 98);">
-                                Two-sided Business Cards
-                            </h5>
-                            <p class=" fw-semibold card-subtitle p-2"
-                                style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
-                                STARTING AT
-                            </p>
-                            <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
-                                rgb(56, 74, 98);">
-                                ₦7,700 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
-                            </p>
-                        </div>
-                        <a id="purchbtn" class="btn text-start text-light fw-semibold p-2 m-2"
-                            style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
-                            href="#"><span>Browse
-                                Two-sided Bu...
-                                <img src="images/svgexport-2.png" alt="">
-                            </span></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div id="card-img">
-                            <img src="images/card-1.png" class="card-img-top" alt=""
-                                style="height: 14rem;object-fit: cover;">
-                        </div>
-                        <div>
-                            <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
-                                rgb(56, 74, 98);">
-                                Two-sided Business Cards
-                            </h5>
-                            <p class=" fw-semibold card-subtitle p-2"
-                                style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
-                                STARTING AT
-                            </p>
-                            <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
-                                rgb(56, 74, 98);">
-                                ₦7,700 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
-                            </p>
-                        </div>
-                        <a id="purchbtn" class="btn text-start text-light fw-semibold p-2 m-2"
-                            style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
-                            href="#"><span>Browse
-                                Two-sided Bu...
-                                <img src="images/svgexport-2.png" alt="">
-                            </span></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div id="card-img">
-                            <img src="images/card-1.png" class="card-img-top" alt=""
-                                style="height: 14rem;object-fit: cover;">
-                        </div>
-                        <div>
-                            <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
-                                rgb(56, 74, 98);">
-                                Two-sided Business Cards
-                            </h5>
-                            <p class=" fw-semibold card-subtitle p-2"
-                                style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
-                                STARTING AT
-                            </p>
-                            <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
-                                rgb(56, 74, 98);">
-                                ₦7,700 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
-                            </p>
-                        </div>
-                        <a id="purchbtn" class="btn text-start text-light fw-semibold p-2 m-2"
-                            style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
-                            href="#"><span>Browse
-                                Two-sided Bu...
-                                <img src="images/svgexport-2.png" alt="">
-                            </span></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="card">
-                        <div id="card-img">
-                            <img src="images/card-1.png" class="card-img-top" alt=""
-                                style="height: 14rem;object-fit: cover;">
-                        </div>
-                        <div>
-                            <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
-                                rgb(56, 74, 98);">
-                                Two-sided Business Cards
-                            </h5>
-                            <p class=" fw-semibold card-subtitle p-2"
-                                style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
-                                STARTING AT
-                            </p>
-                            <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
-                                rgb(56, 74, 98);">
-                                ₦7,700 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
-                            </p>
-                        </div>
-                        <a id="purchbtn" class="btn text-start text-light fw-semibold p-2 m-2"
-                            style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
-                            href="#"><span>Browse
-                                Two-sided Bu...
-                                <img src="images/svgexport-2.png" alt="">
-                            </span></a>
                     </div>
                 </div>
             </div>
         </div>
+
+    </div>
     </div>
     <script src="/public/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -378,23 +232,23 @@
         const db = getDatabase();
         const auth = getAuth();
         let userDetails = {}
-        document.getElementById("purchbtn").addEventListener("click",function(){
+        document.getElementById("purchbtn").addEventListener("click", function () {
             onAuthStateChanged(auth, (user) => {
-            if (user) {
-                userDetails.email = user.email;
-                userDetails.uid = user.uid;
-                // alert("please wrk")
-            } else {
-                window.location = "signup.html";
-                // alert("please wrk")
-            }
+                if (user) {
+                    userDetails.email = user.email;
+                    userDetails.uid = user.uid;
+                    // alert("please wrk")
+                } else {
+                    window.location = "signup.html";
+                    // alert("please wrk")
+                }
+            })
         })
+        document.getElementById("sign").addEventListener("click", function () {
+            document.location = ("signup.html")
         })
-        document.getElementById("sign").addEventListener("click",function(){
-            document.location=("signup.html")
-        })
-        document.getElementById("log").addEventListener("click",function(){
-            document.location=("signup.html")
+        document.getElementById("log").addEventListener("click", function () {
+            document.location = ("signup.html")
         })
         // onAuthStateChanged(auth, (user) => {
         //     if (user) {
