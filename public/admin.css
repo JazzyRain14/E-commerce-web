@@ -5,8 +5,8 @@
 
 body {
     /* position: relative; */
-    height: 100vh;
-    width: 100%;
+    height: 100vh !important;
+    width: 100% !important;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -15,7 +15,9 @@ body {
 }
 
 .header {
-    max-width: 100%;
+    max-width: 100% !important;
+    min-width: 100%;
+    width: 100% !important;
     height: 400px;
     margin: auto;
     /* border: thin solid; */
@@ -32,9 +34,75 @@ body {
     text-shadow: 5px 5px 8px rgb(102, 98, 98);
     text-align: center !important;
 }
-#butt{
-    
+
+#staticBackdrop {
+    background: rgba(255, 255, 255, 0.73);
 }
+
+.butt {
+    position: relative;
+    top: 50px;
+    width: 100% !important;
+    display: grid;
+    gap: 50px;
+    background-color: rgba(123, 181, 201, .19);
+    padding: 10px 10px !important;
+}
+
+.butt div label {
+    /* border: thin solid; */
+    width: 35%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.butt div input {
+    width: 62%;
+    border-top: 0;
+    border-right: 0;
+    border-left: thin solid;
+    border-bottom: thin solid;
+    border-radius: 10px;
+    outline: 0 !important;
+    background: transparent !important;
+}
+.butt div input:focus{
+    border-color: #7BB5C9 !important;
+}
+.butt div select{
+    width: 65%;
+    border-top: 0;
+    border-right: 0;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    outline: 0 !important;
+    background: transparent !important;
+}
+
+.butt div select:focus{
+    border-color: #7BB5C9;
+    box-shadow: none;
+}
+
+.addFile {
+    padding: 5px 15px !important;
+    border: thin solid !important;
+}
+
+.butt button {
+    padding: 5px 15px !important;
+    font-size: 18px !important;
+    font-weight: 600;
+    font-family: cursive, sans-serif;
+    background-color: #f3abd6;
+}
+
+.butt button:hover {
+    border: 1px solid !important;
+    border-color: #d783b5 !important;
+    background-color: #d783b5;
+}
+
 .navBar {
     /* border: thin solid; */
     /* box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
@@ -46,5 +114,48 @@ body {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: inset 10px 10px 20px rgba(255, 255, 255, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.2), inset -5px -5px 5px rgba(255, 255, 255, 0.2), inset 5px 5px 5px rgba(255, 255, 255, 0.2);
     width: 100%;
-    /* z-index: 1; */
+    z-index: 1;
+}
+
+.btn-complement-pink {
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 0.75em 1.5em;
+    display: inline-block;
+    border: 0;
+    background-color: #ec7a8d;
+    color: white;
+    font-weight: 700;
+}
+
+.btn-complement-pink:hover {
+    color: #eaeaea !important;
+    background-color: #7BB5C9;
+}
+.text-muted{
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+}
+.signbtn{
+    padding: 5px 10px !important;
+    background-color: rgba(215, 131, 181, .8) !important;
+}
+.signbtn:hover{
+    background-color: rgb(215, 131, 181) !important;
+    border: 1px solid !important;
+    border-color: #f3abd6 !important;
+    box-shadow: none !important;
+    
+}
+.Btn{
+    background-color: rgba(215, 131, 181, .8) !important;
+}
+.Btn:hover{
+    background-color: rgb(215, 131, 181) !important;
+    border: 1px solid !important;
+    border-color: #f3abd6 !important;
+    box-shadow: none !important;
+    
 }

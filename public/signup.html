@@ -135,7 +135,7 @@
           };
           let userRef = ref(db, `users/${user_id}`);
           set(userRef, user);
-          window.location = "index.html"
+          window.location = "admin.html"
         }).catch((error) => {
           alert(error.message);
         })
@@ -146,7 +146,7 @@
       let password = document.querySelector("#passwordInput").value;
       signInWithEmailAndPassword(auth, email, password)
         .then((credentials) => {
-          window.location = "index.html";
+          window.location = "admin.html";
         }).catch((error) => {
           alert(error.message)
         })

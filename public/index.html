@@ -27,6 +27,9 @@
                             <li class="nav-item">
                                 <a class="nav-link active ms-2 me-2 " aria-current="page" href="#">Home</a>
                             </li>
+                            <li>
+                                <a href="admin.html" class="nav-link">ADMIN</a>
+                            </li>
                         </ul>
                     </div>
                     <div>
@@ -72,7 +75,7 @@
                         <div class="card-footer footer">
                             <div>price</div>
                             <div>Amount</div>
-                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                            <button id="purchBtn" class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
                                 she
                                 yeye mi</button>
                         </div>
@@ -89,7 +92,7 @@
                             <img src="/public/images2/51L7tmfsV5L-removebg-preview.png" alt="" style="width: 100%;">
                         </div>
                         <div class="card-footer">
-                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                            <button id="purchBtn" class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
                                 she
                                 yeye mi</button>
                         </div>
@@ -106,7 +109,7 @@
                             <img src="/public/images/ecommerce/107.jfif" alt="" style="width: 100%;">
                         </div>
                         <div class="card-footer">
-                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                            <button id="purchBtn" class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
                                 she
                                 yeye mi</button>
                         </div>
@@ -123,7 +126,7 @@
                             <img src="/public/images/ecommerce/64.jpg" alt="" style="width: 100%;">
                         </div>
                         <div class="card-footer">
-                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                            <button id="purchBtn" class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
                                 she
                                 yeye mi</button>
                         </div>
@@ -142,7 +145,7 @@
                             <img src="/public/images/ecommerce/113.jpg" alt="" style="width: 100%;">
                         </div>
                         <div class="card-footer">
-                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                            <button id="purchBtn" class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
                                 she
                                 yeye mi</button>
                         </div>
@@ -159,7 +162,7 @@
                             <img src="/public/images2/51L7tmfsV5L-removebg-preview.png" alt="" style="width: 100%;">
                         </div>
                         <div class="card-footer">
-                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                            <button id="purchBtn" class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
                                 she
                                 yeye mi</button>
                         </div>
@@ -176,7 +179,7 @@
                             <img src="/public/images/ecommerce/107.jfif" alt="" style="width: 100%;">
                         </div>
                         <div class="card-footer">
-                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                            <button  id="purchBtn" class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
                                 she
                                 yeye mi</button>
                         </div>
@@ -193,7 +196,7 @@
                             <img src="/public/images/ecommerce/64.jpg" alt="" style="width: 100%;">
                         </div>
                         <div class="card-footer">
-                            <button class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
+                            <button  id="purchBtn" class="btn-complement-pink  p-2 w-75 text-white text-hover-white btnhover">ode fe
                                 she
                                 yeye mi</button>
                         </div>
@@ -232,7 +235,7 @@
         const db = getDatabase();
         const auth = getAuth();
         let userDetails = {}
-        document.getElementById("purchbtn").addEventListener("click", function () {
+        document.getElementById("purchBtn").addEventListener("click", function () {
             onAuthStateChanged(auth, (user) => {
                 if (user) {
                     userDetails.email = user.email;
@@ -245,20 +248,20 @@
             })
         })
         document.getElementById("sign").addEventListener("click", function () {
-            document.location = ("signup.html")
+            document.location = "signup.html"
         })
         document.getElementById("log").addEventListener("click", function () {
-            document.location = ("signup.html")
+            document.location = "signup.html"
         })
-        // onAuthStateChanged(auth, (user) => {
-        //     if (user) {
-        //         userDetails.email = user.email;
-        //         userDetails.uid = user.uid;
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                userDetails.email = user.email;
+                userDetails.uid = user.uid;
 
-        //     } else {
-        //         window.location = "signup.html";
-        //     }
-        // })
+            } else {
+                window.location = "signup.html";
+            }
+        })
     </script>
 </body>
 
