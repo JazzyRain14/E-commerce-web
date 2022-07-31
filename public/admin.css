@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center; */
     overflow-x: hidden;
-    background-color: #eaeaea;
+    background-color: #eaeaea !important;
 }
 
 .header {
@@ -159,3 +159,4 @@ body {
     box-shadow: none !important;
     
 }
+
