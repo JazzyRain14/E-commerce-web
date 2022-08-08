@@ -1,0 +1,15 @@
+<div class="col-lg-3 col-md-5 col-sm-6 boxMode  mt-sm-2 smtop">
+                <div class="card-glass m-auto">
+                    <div id="card-img" class="card-header text-center">
+                        <div class="card-title">
+                            <p>header</p>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <img src="/public/images/ecommerce/64.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="card-footer">
+                        <button class="button btn-complement-pink"><span>Add to cart </span></button>
+                    </div>
+                </div>
+            </div>

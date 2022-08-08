@@ -1,24 +1,27 @@
-*{
+* {
     padding: 0 !important;
     margin: 0 !important;
     box-sizing: border-box;
 }
-body{
+
+body {
     min-height: 100vh;
     width: 100%;
     background-color: #dfe6ff !important;
 }
-body::after{
+
+body::after {
     content: '';
     position: fixed;
-     bottom: 0;
-     left: 0;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-   clip-path: circle(30% at right 70%);
+    clip-path: circle(30% at right 70%);
     background-color: #d783b5;
 }
-body::before{
+
+body::before {
     content: '';
     position: fixed;
     top: 0;
@@ -27,56 +30,298 @@ body::before{
     height: 100%;
     clip-path: circle(20% at 10% 10%);
     background-color: #7db9cd;
+    z-index: -1;
 }
-.boxMode{
+
+.boxMode {
     z-index: 1 !important;
 }
-.signbtn{
+
+.btnBox {
+    /* border: thin solid; */
+    width: 30%;
+}
+
+.signbtn {
     background: #ce80af !important;
     padding: 10px 20px !important;
     border-color: #d783b5 !important;
+    width: 35% !important;
 }
-.logbtn{
+
+.logbtn {
     background: #eaeaea !important;
     padding: 10px 20px !important;
     border-color: #d783b5 !important;
+    width: 35% !important;
 }
-.logbtn:hover{
+
+.logbtn:hover {
     background: #ce80af !important;
 }
-.btnhover{
+
+.btnhover {
     font-family: cursive, sans-serif;
     font-size: 18px !important;
 }
-.btnhover:hover{
+
+/* .btnhover:hover {
     background: #7BB5C9 !important;
-}
-.carou{
-    /* border: thick solid !important; */
+} */
+
+.carou {
+    /* border: thin solid !important; */
     z-index: 1;
     height: 80vh !important;
-    background:linear-gradient(to right, #7BB5C9, #ce80af);
+    background: linear-gradient(to right, #7BB5C9, #ce80af);
 }
-#imgg{
-    height: 480px;
-    margin: auto !important;
-    object-fit: cover !important;
-    object-position: center !important;
+
+.carou-txt {
+    position: absolute !important;
+    top: 10rem !important;
 }
-.cardglass{
-    border: thin solid;
-    height:  450px !important;
+
+.carou-txt h5 {
+    font-size: 3rem !important;
+    color: #000 !important;
 }
-.cardbody{
+
+.carou-txt p {
+    font-size: 20px !important;
+    font-weight: 500;
+    color: #000 !important;
+    text-shadow: 2px 2px #eaeaea;
+}
+
+.carou-txt h4 {
+    font-size: 6vw !important;
+    text-transform: capitalize;
+    font-weight: 700;
+    /* color: #000 !important; */
+    animation: word 8s linear infinite;
+    background-size: 100%;
+    padding: 5px !important;
     /* border: thin solid; */
-    position: absolute;
-    top: 50px;
-    height: fit-content !important;
+    transition: 2s;
+
 }
-.footer{
-    position: absolute;
+
+@keyframes word {
+    from {
+        background: linear-gradient(to right, #7db9cd, #7BB5C9, #ce80af, #d783b5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    to{
+        background: linear-gradient(to right, #ce80af, #d783b5, #7db9cd, #7BB5C9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+#imgg {
+    /* width: 100% !important; */
+    /* max-width: 100vw; */
+    /* height: 480px; */
+    /* border:1px solid; */
+    /* margin: auto !important; */
+    /* object-fit: cover !important; */
+    /* object-position: center !important; */
+    /* border: thin solid; */
+    width: 100%;
+    /* max-width: 400px; */
+    height: 100% !important;
+}
+
+.cardbody {
+    /* border: thin solid; */
+    /* position: absolute;
+    top: 50px; */
+    overflow: hidden;
+}
+.cardbody img{
+    height: 100%;
+    background-color: #cac6c6 !important;
+    transition: transform .9s;
+}
+.cardbody img:hover{
+    transform: scale(1.1);
+}
+.card-footer h5:nth-child(1){
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 2px !important;
+    white-space: nowrap;
+    width: 200px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+}
+.card-footer h5:nth-child(2){
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 2px !important;
+    white-space: nowrap;
+    width: 200px !important;
+    overflow: hidden;
+  
+}
+.footer {
+    /* position: absolute; */
     bottom: 0 !important;
     /* border: thin solid red; */
-    height: 100px !important;
+    /* height: 100px !important; */
     z-index: 1 !important;
+}
+
+/* for new top nav */
+/* Add a black background color to the top navigation */
+.topnav {
+    background: rgba(255, 255, 255, 0.1);
+    /* border: thin solid !important; */
+    overflow: hidden !important;
+    z-index: 1 !important;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left !important;
+    display: block !important;
+    text-align: center !important;
+    padding: 14px 16px !important;
+    text-decoration: none !important;
+    font-size: 17px !important;
+    /* border: thin solid; */
+}
+
+/* style for the image link */
+.topnav a:nth-child(1) {
+    padding: 0 !important;
+}
+
+/*style for web logo */
+.topnav a img {
+    /* border: thin solid !important; */
+    width: 100% !important;
+    max-width: 120px !important;
+    height: auto !important;
+    padding: 0px !important;
+    float: left !important;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgba(215, 131, 181, .5) !important;
+    color: black !important;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: rgba(11, 149, 195, 0.9) !important;
+    color: white !important;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none !important;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none !important;
+    }
+
+    .carou {
+        /* border: thin solid !important; */
+        z-index: 1;
+        height: 30vh !important;
+        width: 100% !important;
+        background: linear-gradient(to right, #7BB5C9, #ce80af);
+    }
+
+    .mt {
+        margin-top: 50px !important;
+    }
+
+    .smtop {
+        margin-top: 12px !important;
+    }
+
+    .topnav a.icon {
+        float: right !important;
+        display: block !important;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative !important;
+    }
+
+    .topnav.topnav.responsive a img {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute !important;
+        right: 0 !important;
+        top: 0 !important;
+    }
+
+    .topnav.responsive a {
+        float: none !important;
+        display: block !important;
+        text-align: center !important;
+    }
+}
+
+
+.button {
+    border-radius: 4px !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    text-align: center !important;
+    font-size: 20px !important;
+    padding: 10px !important;
+    width: 200px !important;
+    transition: all 0.5s !important;
+    cursor: pointer !important;
+}
+
+.button:hover {
+    background: #7BB5C9 !important;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block !important;
+    position: relative;
+    transition: 0.5s !important;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: relative !important;
+    opacity: 0 !important;
+    top: 0 !important;
+    right: -50px !important;
+    transition: 0.5s !important;
+}
+
+.button:hover span {
+    padding-right: 25px !important;
+}
+
+.button:hover span:after {
+    opacity: 1 !important;
+    right: 0 !important;
 }

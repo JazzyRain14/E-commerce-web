@@ -84,8 +84,8 @@
     </div>
     <div class="container-fluid">
         <div id="loader" class="bg-warning display-6 text-center"></div>
-        <div id="productDisp" class="row">
-
+        <div id="productDisp" class="row gap-2">
+         
         </div>
         <script src="/public/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
         <script type="module">
@@ -131,7 +131,7 @@
                     productId = productArray.length;
                     displayTodo(productArray);
                 } else {
-                    productId = 0;
+                    productId = 0;  
                 }
             })
 
@@ -199,16 +199,13 @@
                         productDisp.innerHTML +=
                             `<div class="col-lg-3 col-md-5 col-sm-12 mt-sm-2 ampi">
                                 <div class="card shadow-lg m-auto">
-                                    <div id="card-img" class="card-header text-center">
-                                        <div class="card-title">
-                                            <marquee behavior="" direction="left">We are great</marquee>
-                                        </div>
+                                    <div id="card-img" class="card-header">
                                         <div class="card-body cardbody">
-                                            <img src="${url}" alt="" style="width: 100%;">
+                                            <img src="${url}" alt="" style="width: 100%; height:240px;">
                                         </div>
                                         <div class="card-footer footer d-grid gap-1">
-                                            <div class="f-5 fw-bold">Product Name:<span class="fs-4 fw-bold">${todo.productname}</span></div>
-                                            <div class="f-5 fw-bold">price:<span class="fs-4 fw-bold">${currency}${todo.productprice}</span></div>
+                                            <div style="font-size: 20px;">Product Name:<span class="fw-bold" style="font-size: 18px;">${todo.productname}</span></div>
+                                            <div class="f-5 fw-bold">price:<span class="fs-3 fw-bold">${currency}${todo.productprice}</span></div>
                                             <div class="f-5 fw-bold">Discount:<span>${todo.Discount}${percent}</span></div>
                                             <button class="btn-complement-pink  p-2 w-75">
                                                 ode fe she yeye mi
